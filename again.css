@@ -1,0 +1,36 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace; 
+    margin: 0;
+}
+h1{
+ font-size: medium; 
+}
+.highlight{
+    color: orangered;
+}
+.background{
+    background-color: orangered;
+}
+.hulf{
+    width: 50%;
+    float: left;
+    margin-left: 3%;
+}
+.hulf img{
+    
+    width: 60%;
+}
+.hulf-1{
+    width: 50%;
+    float: left; 
+    margin-left: 2%;
+}
+.hulf-1 img{
+    
+    width: 60%;
+}
+.back1{
+    background-image: url("again/firstback.jpg");
+    
+}
