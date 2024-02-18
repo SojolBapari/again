@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action Demo</title>
+<style>
+    #actionTarget {
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid black;
+        width: fit-content;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<h2>JavaScript Actions Demo</h2>
+
+<div id="actionTarget" onclick="changeText()" onmouseover="changeColor()" onmouseout="resetColor()">
+    Click me to change text, mouse over me to change color!
+</div>
+
+<button onclick="removeTag()">Remove Tag</button>
+<button onclick="insertTag()">Insert New Tag</button>
+
+<script>
+    function changeText() {
+        var element = document.getElementById("actionTarget");
+        element.textContent = "Text changed!";
+    }
+
+    function changeColor() {
+        var element = document.getElementById("actionTarget");
+        element.style.backgroundColor = "lightblue";
+    }
+
+    function resetColor() {
+        var element = document.getElementById("actionTarget");
+        element.style.backgroundColor = "";
+    }
+
+    function removeTag() {
+        var element = document.getElementById("actionTarget");
+        element.parentNode.removeChild(element);
+    }
+
+    function insertTag() {
+        var newElement = document.createElement("div");
+        newElement.textContent = "New tag inserted!";
+        newElement.style.padding = "20px";
+        newElement.style.border = "2px solid black";
+        newElement.style.width = "fit-content";
+        newElement.style.cursor = "pointer";
+        newElement.onclick = changeText;
+        newElement.onmouseover = changeColor;
+        newElement.onmouseout = resetColor;
+        
+        document.body.appendChild(newElement);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* External CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+a.link {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+a.link:hover {
+    background-color: #333;
+    color: #fff;
+}

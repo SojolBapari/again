@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Simple Website</h1>
+    <p>This is a simple website showcasing CSS formatting, forms, tables, and link styles.</p>
+    
+    <!-- Inline CSS -->
+    <div style="margin: 20px auto; width: 80%; background-color: #fff; padding: 20px;">
+        <h2 style="color: #333; text-align: center;">Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+
+            <button type="submit" style="background-color: #333; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">Submit</button>
+        </form>
+    </div>
+    
+    <table style="width: 80%; margin: 20px auto; border-collapse: collapse;">
+        <caption style="font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">Employee List</caption>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Developer</td>
+            <td>$60,000</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>Designer</td>
+            <td>$55,000</td>
+        </tr>
+    </table>
+
+    <!-- External CSS -->
+    <a href="#" class="link">Learn More</a>
+
+</body>
+</html>
